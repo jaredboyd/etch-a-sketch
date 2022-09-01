@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="frame">
+      <h1>Etch-A-Sketch</h1>
+      <div class="canvas">
+
+      </div>
+      <div class="knobs">
+        <div class="knob">
+          <div class="leftKnobControls">
+            <p>Resolution</p>
+            <div class="resolutionButtons">
+              <div class="resolutionDown"></div>
+              <div class="resolutionUp"></div>
+            </div>
+            <select name="resolution" id="resolution"
+              onchange="changeResolution()">
+              <option value="16">16 x 16</option>
+              <option value="32">32 x 32</option>
+              <option value="64">64 x 64</option>
+              <option value="128">128 x 128</option>
+            </select>
+          </div>
+        </div>
+        <button class="clearButton" onclick="changeResolution()">Clear
+          Canvas</button>
+        <div class="knob">
+          <div class="rightKnobControls">
+            <p>Color</p>
+            <div id="colorSelector" class="blackInk"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
